@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Action Trigger
     steps:
+    # To use this repository's private action, you must check out the repository
+    - name: Checkout
+      uses: actions/checkout@v2
     - name: Action Trigger Step
       id: action-trigger-step
       uses: ./.github/actions/test-action
