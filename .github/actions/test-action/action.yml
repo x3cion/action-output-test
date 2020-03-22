@@ -1,0 +1,8 @@
+name: 'Test Action'
+description: 'Tests output logging'
+outputs:
+  some-secretvalue:
+    description: 'Secret value to be logged away?'
+runs:
+  using: 'node12'
+  main: 'main.js'

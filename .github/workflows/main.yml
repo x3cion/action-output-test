@@ -1,0 +1,15 @@
+name: Main
+
+on: [push]
+
+jobs:
+  actiontrigger:
+    runs-on: ubuntu-latest
+    name: Action Trigger
+    steps:
+    - name: Action Trigger Step
+      id: action-trigger-step
+      uses: actions/test-action@v0.0.1
+    - name: Use output
+      run: echo "The output was ${{ steps.action-trigger-step.some-secretvalue }}"
+      
