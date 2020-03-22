@@ -55,9 +55,8 @@ module.exports = require("os");
 
 const core = __webpack_require__(470);
 
-console.log("action triggered");
-
-core.setOutput("some-secretvalue", "secret content");
+const input = core.getInput("something");
+console.log("consume triggered with", input);
 
 /***/ }),
 

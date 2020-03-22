@@ -57,6 +57,7 @@ const core = __webpack_require__(470);
 
 console.log("action triggered");
 
+core.setSecret("some-secretvalue");
 core.setOutput("some-secretvalue", "secret content");
 
 /***/ }),
