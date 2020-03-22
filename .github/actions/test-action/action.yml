@@ -5,4 +5,4 @@ outputs:
     description: 'Secret value to be logged away?'
 runs:
   using: 'node12'
-  main: 'main.js'
+  main: 'dist/main.js'
