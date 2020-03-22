@@ -1,0 +1,9 @@
+name: 'consume Action'
+description: 'consume output logging'
+inputs:
+  something:
+    description: Some value
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

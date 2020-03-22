@@ -1,0 +1,11 @@
+{
+	"name": "consume-action",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"@actions/core": "1.2.3"
+	},
+	"devDependencies": {
+		"@zeit/ncc": "0.21.1"
+	}
+}
