@@ -9,7 +9,6 @@ jobs:
     steps:
     - name: Action Trigger Step
       id: action-trigger-step
-      uses: actions/test-action@v0.0.1
+      uses: ./.github/actions/test-action
     - name: Use output
       run: echo "The output was ${{ steps.action-trigger-step.some-secretvalue }}"
-      
